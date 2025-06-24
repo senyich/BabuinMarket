@@ -1,0 +1,6 @@
+@BabuinMarket.API_HostAddress = http://localhost:5160
+
+GET {{BabuinMarket.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
