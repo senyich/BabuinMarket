@@ -1,12 +1,13 @@
-namespace BabuinMarket.Domain;
+using BabuinMarket.Domain.Entities.Abstraction;
 
-public class Support
+namespace BabuinMarket.Domain.Entities;
+
+public class Support : BaseEntity
 {
-    public int Id { get; set; }
     public string? Subject { get; set; }
     public string? Message { get; set; }
     public DateTime CreatedAt { get; set; }
     public string? Status { get; set; }
-    public int UserId { get; set; }
+    public Guid UserId { get; set; }
     public User? User { get; set; }
 }

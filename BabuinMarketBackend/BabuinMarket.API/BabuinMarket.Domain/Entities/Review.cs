@@ -1,12 +1,13 @@
-namespace BabuinMarket.Domain;
+using BabuinMarket.Domain.Entities.Abstraction;
 
-public class Review
+namespace BabuinMarket.Domain.Entities;
+
+public class Review : BaseEntity
 {
-    public int Id { get; set; }
     public string? Comment { get; set; }
     public int Rating { get; set; }
     public DateTime ReviewDate { get; set; }
     public User? User { get; set; }
-    public int GameId { get; set; }
+    public Guid GameId { get; set; }
     public Game? Game { get; set; }
 }

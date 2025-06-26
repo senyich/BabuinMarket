@@ -1,4 +1,4 @@
-namespace BabuinMarket.Domain;
+namespace BabuinMarket.Domain.Enums;
 public enum OrderStatus
 {
     New,

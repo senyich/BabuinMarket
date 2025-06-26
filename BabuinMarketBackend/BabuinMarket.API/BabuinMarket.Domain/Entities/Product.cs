@@ -1,11 +1,13 @@
-namespace BabuinMarket.Domain;
+using BabuinMarket.Domain.Entities.Abstraction;
 
-public class Product : Entity
+namespace BabuinMarket.Domain.Entities;
+
+public class Product : BaseEntity
 {
     public string? Name { get; set; }
     public decimal Price { get; set; }
     public string? Description { get; set; }
-    public string? SKU { get; set; } // Артикул
+    public string? Arcticle { get; set; } 
     public string? Category { get; set; }
     public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
     public bool IsActive { get; set; } = true;
